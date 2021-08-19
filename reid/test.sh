@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 tools/test.py --config_file='configs/softmax_triplet.yml' TEST.WEIGHT 'your_model_path'
