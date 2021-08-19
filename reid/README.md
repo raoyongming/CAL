@@ -19,4 +19,3 @@ Our implementation is based on the code of [BoT](https://github.com/michuanhaoha
 ## Reproduce the results
 - Run script train.sh to train the model.
 - Change the path in test.sh to the pre-trained model path and run `sh test.sh` for inference.
-- 
