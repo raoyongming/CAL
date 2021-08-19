@@ -58,8 +58,8 @@ Download FGVC-Aircraft dataset from [this like](http://www.robots.ox.ac.uk/~vgg/
 - Set configurations in ```config_infer.py``` and run  `python infer.py` to conduct multi-crop evaluation.
 
 ## Requirements
-* CUDA
 * Python 3
 * PyTorch 1.0+
+* Apex
 
 
