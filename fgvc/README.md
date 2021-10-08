@@ -25,17 +25,11 @@ Download Stanford Cars dataset from [this link](https://ai.stanford.edu/~jkrause
 
   ```
   -/stanford_cars
-        └─── cars_test
+        └─── car_ims
                   └─── 00001.jpg
                   └─── 00002.jpg
                   └─── ...
-        └─── cars_train
-                  └─── 00001.jpg
-                  └─── 00002.jpg
-                  └─── ...
-        └─── devkit
-                  └─── cars_train_annos.mat
-        └─── cars_test_annos_withlabels.mat
+        └─── cars_annos.mat
   ```
 
 ### FGVC-Aircraft
