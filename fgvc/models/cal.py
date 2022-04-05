@@ -10,7 +10,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-import models.vgg as vgg
 import models.resnet as resnet
 from models.inception import inception_v3, BasicConv2d
 
@@ -145,9 +144,6 @@ class WSDAN_CAL(nn.Module):
                 self.num_features = 2048
             else:
                 raise ValueError('Unsupported net: %s' % net)
-        elif 'vgg' in net:
-            self.features = getattr(vgg, net)(pretrained=pretrained).get_features()
-            self.num_features = 512
         elif 'resnet' in net:
             self.features = getattr(resnet, net)(pretrained=pretrained).get_features()
             self.num_features = 512 * self.features[-1][-1].expansion

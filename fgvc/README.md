@@ -53,7 +53,7 @@ Download FGVC-Aircraft dataset from [this like](http://www.robots.ox.ac.uk/~vgg/
 
 ## Requirements
 * Python 3
-* PyTorch 1.0+
+* PyTorch 1.6+
 * Apex
 
 
