@@ -175,7 +175,7 @@ class WSDAN_CAL(nn.Module):
         else:
             attention_maps = feature_maps[:, :self.M, ...]
 
-        feature_matrix = self.bap(feature_maps, attention_maps)
+        feature_matrix, _ = self.bap(feature_maps, attention_maps)
         p = self.fc(feature_matrix * 100.)
 
         return p, attention_maps
