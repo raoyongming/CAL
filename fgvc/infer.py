@@ -96,7 +96,7 @@ def visualize(**kwargs):
         for i, (X, y) in enumerate(data_loader):
             X = X.to(device)
 
-            attention_maps = net.visualize(X)
+            p, attention_maps = net.visualize(X)
             attention_maps = torch.max(attention_maps, dim=1, keepdim=True)[0]
             attention_maps = F.upsample_bilinear(attention_maps, size=(X.size(2), X.size(3)))
             attention_maps = torch.sqrt(attention_maps.cpu() / attention_maps.max().item())
